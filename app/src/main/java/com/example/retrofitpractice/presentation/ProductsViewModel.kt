@@ -3,7 +3,7 @@ package com.example.retrofitpractice.presentation
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.retrofitpractice.data.remote.model.Product
-import com.example.retrofitpractice.domain.repository.ProductRepository
+import com.example.retrofitpractice.data.repository.ProductRepository
 import com.example.retrofitpractice.utils.Results
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
@@ -15,8 +15,8 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltViewModel
-class ProductsViewModel @Inject constructor(
+
+class ProductsViewModel(
     private val repository: ProductRepository
 ): ViewModel() {
 

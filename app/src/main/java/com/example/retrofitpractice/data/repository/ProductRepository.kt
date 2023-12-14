@@ -1,4 +1,4 @@
-package com.example.retrofitpractice.domain.repository
+package com.example.retrofitpractice.data.repository
 
 import com.example.retrofitpractice.data.remote.model.Product
 import kotlinx.coroutines.flow.Flow
